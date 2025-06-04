@@ -1,0 +1,8 @@
+services:
+  news-bot:
+    build: .
+    container_name: news-bot
+    volumes:
+      - .:/app
+    command: python -m bot
+    restart: always

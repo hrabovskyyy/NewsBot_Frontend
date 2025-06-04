@@ -1,0 +1,1810 @@
+2025-05-21 00:31:18,934 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 00:38:48,513 | ERROR | 🔴 Виняток: 'NoneType' object has no attribute 'from_user'
+Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/main_menu.py", line 32, in handle_start_menu
+    await handle_category_choice(update, context)
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 13, in handle_category_choice
+    user_id = query.from_user.id
+              ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'from_user'
+2025-05-21 00:42:04,838 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 00:43:10,371 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'from_user'
+2025-05-21 00:43:10,371 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/main_menu.py", line 32, in handle_start_menu
+    await handle_category_choice(update, context)
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 13, in handle_category_choice
+    user_id = query.from_user.id
+              ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'from_user'
+
+2025-05-21 00:46:36,864 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 01:00:46,073 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 13:35:18,112 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 13:41:41,946 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 13:53:45,737 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-05-21 13:53:45,738 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 26, in handle_reaction
+    reactions = load_reactions()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 13, in load_reactions
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-05-21 13:57:12,648 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 13:57:58,203 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-05-21 13:57:58,204 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 26, in handle_reaction
+    reactions = load_reactions()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 13, in load_reactions
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-05-21 13:58:33,411 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 15:38:05,722 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 15:44:11,938 - ERROR - ❌ Помилка: Button_data_invalid
+2025-05-21 15:44:11,939 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 69, in handle_news_request
+    await context.bot.send_message(
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 2613, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 820, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 517, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 572, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+
+2025-05-21 15:44:14,168 - ERROR - ❌ Помилка: Button_data_invalid
+2025-05-21 15:44:14,169 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 69, in handle_news_request
+    await context.bot.send_message(
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 2613, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 820, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 517, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 572, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+
+2025-05-21 15:44:15,764 - ERROR - ❌ Помилка: Button_data_invalid
+2025-05-21 15:44:15,764 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 69, in handle_news_request
+    await context.bot.send_message(
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 2613, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 820, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 517, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 572, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+
+2025-05-21 15:46:01,087 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-05-21 15:46:01,088 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 26, in handle_reaction
+    reactions = load_reactions()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 13, in load_reactions
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-05-21 15:46:02,277 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-05-21 15:46:02,277 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 26, in handle_reaction
+    reactions = load_reactions()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 13, in load_reactions
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-05-21 16:41:49,853 - ERROR - ❌ Помилка: 'list' object has no attribute 'get'
+2025-05-21 16:41:49,853 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 52, in handle_news_request
+    articles = await get_top_headlines(country=country, category=category, page_size=5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/services/api_client.py", line 14, in get_top_headlines
+    articles = data.get("articles", [])
+               ^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+2025-05-21 16:55:14,117 - ERROR - ❌ Помилка: 'str' object has no attribute 'get'
+2025-05-21 16:55:14,118 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 62, in handle_news_request
+    title = article.get('title', '❗Без заголовка')
+            ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2025-05-21 17:23:33,048 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-05-21 17:23:33,049 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 26, in handle_reaction
+    reactions = load_reactions()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 13, in load_reactions
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-05-21 17:23:35,266 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-05-21 17:23:35,266 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 26, in handle_reaction
+    reactions = load_reactions()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/reactions.py", line 13, in load_reactions
+    return json.load(f)
+           ^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/.pyenv/versions/3.11.7/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-05-21 17:30:25,915 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-05-21 18:06:57,577 - ERROR - ❌ Помилка: Cannot connect to host localhost:5086 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 5086, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 5086)]
+2025-05-21 18:06:57,578 - ERROR - Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/connector.py", line 1115, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohappyeyeballs/impl.py", line 141, in start_connection
+    raise OSError(first_errno, msg)
+ConnectionRefusedError: [Errno 61] Multiple exceptions: [Errno 61] Connect call failed ('::1', 5086, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 5086)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/handlers/headlines.py", line 52, in handle_news_request
+    articles = await get_top_headlines(country=country, category=category, page_size=5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/services/api_client.py", line 9, in get_top_headlines
+    async with session.get(url) as resp:
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/connector.py", line 1406, in _create_direct_connection
+    raise last_exc
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/connector.py", line 1375, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/aiohttp/connector.py", line 1130, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:5086 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 5086, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 5086)]
+
+2025-05-21 18:36:32,140 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7049523775:update_fetcher' coro=<Application._update_fetcher() running at /Users/urijurij/PycharmProjects/hrabovskyy/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 12:10:53,757 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 12:14:04,249 - ERROR - ❌ Помилка: The parameter `keyboard` should be a sequence of sequences of strings or KeyboardButtons
+2025-06-04 12:14:04,250 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 18, in handle_search
+    reply_markup=get_search_keyboard())
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/keyboards/search_keyboard.py", line 13, in get_search_keyboard
+    return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_replykeyboardmarkup.py", line 144, in __init__
+    raise ValueError(
+ValueError: The parameter `keyboard` should be a sequence of sequences of strings or KeyboardButtons
+
+2025-06-04 12:14:36,616 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 12:15:00,170 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 12:15:00,170 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 20, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 12:15:57,385 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 12:16:59,261 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'text'
+2025-06-04 12:16:59,262 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 10, in handle_search
+    if update.message.text == SEARCH_NEWS:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+
+2025-06-04 12:17:12,655 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 12:18:03,834 - ERROR - ❌ Помилка: list index out of range
+2025-06-04 12:18:03,835 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 22, in handle_search
+    period = callback_data.split("_")[3]
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+2025-06-04 16:16:37,078 - ERROR - ❌ Помилка: list indices must be integers or slices, not str
+2025-06-04 16:16:37,078 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 42, in handle_search
+    send_all_articles(update, data)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 54, in send_all_articles
+    for article in response["articles"]:
+                   ~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+2025-06-04 16:17:30,489 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 16:17:40,542 - ERROR - ❌ Помилка: 'list' object has no attribute 'get'
+2025-06-04 16:17:40,542 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 43, in handle_search
+    send_all_articles(update, data.get("articles"))
+                              ^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+2025-06-04 16:19:07,523 - ERROR - ❌ Помилка: 'list' object has no attribute 'get'
+2025-06-04 16:19:07,523 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 43, in handle_search
+    send_all_articles(update, data.get("articles"))
+                              ^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+2025-06-04 16:20:32,690 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 16:20:59,293 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:20:59,293 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 23, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:24:49,415 - ERROR - ❌ Помилка: unhashable type: 'slice'
+2025-06-04 16:24:49,415 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 43, in handle_search
+    send_all_articles(update, data[:5])
+                              ~~~~^^^^
+TypeError: unhashable type: 'slice'
+
+2025-06-04 16:25:41,174 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 16:26:15,188 - ERROR - ❌ Помилка: unhashable type: 'slice'
+2025-06-04 16:26:15,188 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 43, in handle_search
+    send_all_articles(update, data[:5])
+                              ~~~~^^^^
+TypeError: unhashable type: 'slice'
+
+2025-06-04 16:26:58,428 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'reply_text'
+2025-06-04 16:26:58,428 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 42, in handle_search
+    send_all_articles(update, data.get("articles")[:5])
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 61, in send_all_articles
+    update.message.reply_text(f"Назва: {title}\n"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+
+2025-06-04 16:27:34,494 - ERROR - ❌ Помилка: 'NoneType' object is not subscriptable
+2025-06-04 16:27:34,494 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 42, in handle_search
+    send_all_articles(update, data.get("articles")[:5])
+                              ~~~~~~~~~~~~~~~~~~~~^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2025-06-04 16:32:51,662 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 16:39:07,032 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:39:07,032 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 30, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:39:08,378 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:39:08,379 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 30, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:42:27,579 - ERROR - ❌ Помилка: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/News/search?q=bitcoin&from=2025-05-28&to=2025-06-04 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc5d8fd0190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-06-04 16:42:27,579 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fc5d8fd0190>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/News/search?q=bitcoin&from=2025-05-28&to=2025-06-04 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc5d8fd0190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 47, in handle_search
+    data = requests.get(url, params=params).json()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/News/search?q=bitcoin&from=2025-05-28&to=2025-06-04 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc5d8fd0190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-06-04 16:42:58,247 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:42:58,247 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 30, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:45:20,283 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:45:20,284 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 30, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:45:21,660 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:45:21,660 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 30, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:45:22,733 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'data'
+2025-06-04 16:45:22,733 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/search.py", line 30, in handle_search
+    elif update.callback_query.data:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'data'
+
+2025-06-04 16:49:15,048 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 16:52:31,897 - ERROR - ❌ Помилка: httpx.ReadError: 
+2025-06-04 16:52:31,897 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 34, in read
+    return await self._stream.receive(max_bytes=max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/anyio/streams/tls.py", line 219, in receive
+    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/anyio/streams/tls.py", line 162, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 1265, in receive
+    raise self._protocol.exception from None
+anyio.BrokenResourceError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 262, in handle_async_request
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 245, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/connection.py", line 96, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 121, in handle_async_request
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 99, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 164, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 200, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 31, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.11/contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 219, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.11/contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/main_menu.py", line 23, in handle_start_menu
+    msg = await context.bot.send_message(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 2613, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 820, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 517, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 572, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 278, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 243, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+
+2025-06-04 16:52:33,289 - ERROR - Error while getting Updates: httpx.ReadError: 
+2025-06-04 16:52:33,292 - ERROR - ❌ Помилка: httpx.ReadError: 
+2025-06-04 16:52:33,292 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 10, in map_exceptions
+    yield
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 34, in read
+    return await self._stream.receive(max_bytes=max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/anyio/streams/tls.py", line 219, in receive
+    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/anyio/streams/tls.py", line 162, in _call_sslobject_method
+    data = await self.transport_stream.receive()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 1265, in receive
+    raise self._protocol.exception from None
+anyio.BrokenResourceError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 353, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 262, in handle_async_request
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 245, in handle_async_request
+    response = await connection.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/connection.py", line 96, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 121, in handle_async_request
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 99, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 164, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_async/http11.py", line 200, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 31, in read
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.11/contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 219, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 352, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.11/contextlib.py", line 155, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 288, in _request_wrapper
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 278, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 243, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+
+2025-06-04 17:19:45,096 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 17:20:33,843 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 17:21:12,810 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 17:21:27,765 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-06-04 17:21:27,765 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 77, in count_favourites
+    data = requests.get(url).json()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-06-04 17:21:29,227 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-06-04 17:21:29,228 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 77, in count_favourites
+    data = requests.get(url).json()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-06-04 17:21:44,012 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-06-04 17:21:44,012 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 77, in count_favourites
+    data = requests.get(url).json()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-06-04 17:22:06,423 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-06-04 17:22:06,423 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 77, in count_favourites
+    data = requests.get(url).json()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-06-04 17:24:50,945 - ERROR - ❌ Помилка: Expecting value: line 1 column 1 (char 0)
+2025-06-04 17:24:50,945 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 70, in count_favourites
+    data = requests.get(url).json()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2025-06-04 17:27:40,497 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 17:29:31,682 - ERROR - ❌ Помилка: list indices must be integers or slices, not InlineKeyboardButton
+2025-06-04 17:29:31,682 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 54, in handle_profile
+    [InlineKeyboardButton("⭐ Улюблені", callback_data="view_favourites")]
+TypeError: list indices must be integers or slices, not InlineKeyboardButton
+
+2025-06-04 17:29:33,184 - ERROR - ❌ Помилка: list indices must be integers or slices, not InlineKeyboardButton
+2025-06-04 17:29:33,184 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/profile.py", line 54, in handle_profile
+    [InlineKeyboardButton("⭐ Улюблені", callback_data="view_favourites")]
+TypeError: list indices must be integers or slices, not InlineKeyboardButton
+
+2025-06-04 17:29:47,637 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 17:30:10,582 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'reply_text'
+2025-06-04 17:30:10,582 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/favorites.py", line 19, in handle_favorites_menu
+    msg = await update.message.reply_text("😕 У вас ще немає улюблених новин.", reply_markup=get_back_keyboard())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+
+2025-06-04 17:31:19,642 - ERROR - ❌ Помилка: 'NoneType' object has no attribute 'reply_text'
+2025-06-04 17:31:19,642 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/proj/hrabovskyy_BOT/handlers/favorites.py", line 19, in handle_favorites_menu
+    msg = await update.message.reply_text("😕 У вас ще немає улюблених новин.", reply_markup=get_back_keyboard())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+
+2025-06-04 17:35:43,405 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-06-04 17:42:29,125 - ERROR - ❌ Помилка: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93ee34f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-06-04 17:42:29,126 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa93ee34f40>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93ee34f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/app/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/app/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+  File "/app/handlers/profile.py", line 71, in count_favourites
+    data = requests.get(url).json()
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93ee34f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-06-04 17:42:36,559 - ERROR - ❌ Помилка: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93dcd3c10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-06-04 17:42:36,559 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa93dcd3c10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93dcd3c10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/app/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/app/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+  File "/app/handlers/profile.py", line 71, in count_favourites
+    data = requests.get(url).json()
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93dcd3c10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-06-04 17:44:08,378 - ERROR - ❌ Помилка: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93d169070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-06-04 17:44:08,378 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa93d169070>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93d169070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/app/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/app/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+  File "/app/handlers/profile.py", line 71, in count_favourites
+    data = requests.get(url).json()
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93d169070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-06-04 17:56:22,372 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:22,377 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:22,377 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:25,158 - ERROR - ❌ Помилка: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93dcb0700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-06-04 17:56:25,158 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa93dcb0700>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/usr/local/lib/python3.9/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93dcb0700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_application.py", line 1184, in process_update
+    await coroutine
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "/app/bot.py", line 40, in handle_text_message
+    await handle_profile(update, context)
+  File "/app/handlers/profile.py", line 21, in handle_profile
+    fav_count = await count_favourites(update, context)
+  File "/app/handlers/profile.py", line 71, in count_favourites
+    data = requests.get(url).json()
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5086): Max retries exceeded with url: /api/Favorites/user/856763292 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa93dcb0700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+2025-06-04 17:56:26,420 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:26,428 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:26,428 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:27,467 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:27,468 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:27,468 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:31,509 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:31,509 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:31,509 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:33,060 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:33,061 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:33,061 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:37,602 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:37,604 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:37,604 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:39,899 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:39,900 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:39,900 - ERROR - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "/usr/local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:45,192 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:45,193 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:45,193 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 17:56:50,125 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:50,126 - ERROR - ❌ Помилка: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-06-04 17:56:50,126 - ERROR - Traceback (most recent call last):
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 628, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 333, in polling_action_cb
+    raise exc
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 322, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 553, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 394, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 3542, in get_updates
+    await self._post(
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 482, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 335, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/_bot.py", line 510, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 327, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2025-06-04 18:05:34,051 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7721416039:update_fetcher' coro=<Application._update_fetcher() running at /home/turbokwaka/PycharmProjects/tiktokar-bot/.venv/lib/python3.11/site-packages/telegram/ext/_application.py:1101> wait_for=<Future pending cb=[Task.task_wakeup()]>>
