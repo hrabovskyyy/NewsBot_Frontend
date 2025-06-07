@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Status](https://img.shields.io/badge/status-done-brightgreen)
 
 **ХвиляНовин** — це Telegram-бот, який надає свіжі добірки новин з авторитетних світових джерел.  
 🟦 Інтерфейс повністю україномовний і побудований виключно на кнопках.
