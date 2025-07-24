@@ -86,9 +86,3 @@ hvylianovyn/
 
 Ліцензовано за умовами **MIT License**  
 📄 [LICENSE](./LICENSE)
-
----
-
-## 👤 Автор
-
-👨‍💻 [@hrabovskyy](https://t.me/hrabovskyy) — студент КПІ, розробник Telegram-ботів та API  
